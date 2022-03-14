@@ -1,0 +1,70 @@
+{
+  "name": "figfinance-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-watch src/app.js",
+    "start": "node src/bin/www",
+    "build": "rm -rf dist && mkdir dist && babel src -s -d dist",
+    "test": "mocha --require @babel/register src/tests/*.js --exit"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "Mongoose",
+    "figfinance",
+    "fig-finance"
+  ],
+  "author": "Agboba Gideon",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "axios": "^0.21.1",
+    "chalk": "^4.1.1",
+    "connect-redis": "^5.0.0",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "cuid": "^2.1.8",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.12.0",
+    "fs-extra": "^10.0.0",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.12.3",
+    "mongoose-paginate-v2": "^1.3.17",
+    "mongoose-update-if-current": "^1.4.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nanoid": "^3.1.23",
+    "nodemailer": "^6.6.2",
+    "redis": "^3.0.2",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/register": "^7.14.5",
+    "babel-watch": "^7.4.1",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "mocha": "^9.0.1"
+  },
+  "module": "true",
+  "engines": {
+    "node": ">=14.11.0"
+  }
+}

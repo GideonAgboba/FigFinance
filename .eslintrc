@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "semi": 0,
+    "prefer-destructuring": ["error", { "object": true, "array": false }]
+  },
+  "env": {
+    "commonjs": true,
+    "node": true,
+    "mocha": true
+  }
+}

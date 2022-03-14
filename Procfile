@@ -1,0 +1,1 @@
+web: babel-watch src/app.js
