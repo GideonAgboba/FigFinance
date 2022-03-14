@@ -1,1 +1,119 @@
-welcome to figfinance by gideon :)
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FigFinance-API | Technical Test</title>
+    <style>
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        margin: 0px;
+        padding: 0px;
+      }
+      h1 {
+        font-size: 30px;
+        text-transform: capitalize;
+        text-align: center;
+        color: cornflowerblue;
+      }
+      .readme {
+        margin: 0px 50px;
+        padding: 10px 50px;
+        background: wheat;
+      }
+      .readme h2 {
+        margin-bottom: 0px;
+      }
+      .readme code {
+        font-family: Consolas, "courier new";
+        color: crimson;
+        padding: 2px;
+        font-size: 105%;
+      }
+      .readme code div {
+        background: silver;
+        padding: 10px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>welcome to figfinance by gideon :)</h1>
+    </div>
+    <div class="readme">
+      <h2>FigFinance API by Agboba Gideon</h2>
+
+      <p>- Yarn install and setup .env from .env.example</p>
+
+      <h2>API Endpoints</h2>
+
+      <br />
+      <br />
+
+      <h2>Auth:</h2>
+
+      <code>
+        <div>Endpoint: post /auth/signup</div>
+        <div>Endpoint: post /auth/login</div>
+        <div>Endpoint: post /auth/logout</div>
+        <div>Endpoint: post /auth/forgotPwd</div>
+        <div>Endpoint: post /auth/resetPwd</div>
+
+        <div>Endpoint: post /auth/admin/init</div>
+        <div>Endpoint: post /auth/admin/login</div>
+        <div>Endpoint: patch /auth/admin/change-password</div>
+      </code>
+
+      <h2>Admin:</h2>
+
+      <code>
+        <div>Endpoint: post /admin/create</div>
+        <div>Endpoint: get /admin/analytics</div>
+
+        <div>Endpoint: get /admin/get-events</div>
+        <div>Endpoint: get /admin/get-events-categories</div>
+        <div>Endpoint: get /admin/all-users</div>
+        <div>Endpoint: get /admin/get-subscribers</div>
+        <div>Endpoint: get /admin/get-contacts</div>
+        <div>Endpoint: put /admin/toggle-user</div>
+      </code>
+
+      <h2>User:</h2>
+
+      <code>
+        <div>Endpoint: put /user/profile</div>
+        <div>Endpoint: get /user/profile</div>
+        <div>Endpoint: patch /user/change-password</div>
+      </code>
+
+      <h2>Event:</h2>
+
+      <code>
+        <div>Endpoint: get /event</div>
+        <div>Endpoint: get /event/nearby</div>
+        <div>Endpoint: post /event/create</div>
+        <div>Endpoint: post /event/update</div>
+        <div>Endpoint: delete /event/:id</div>
+        <div>Endpoint: get /event/category</div>
+        <div>Endpoint: post /event/category/create</div>
+        <div>Endpoint: post /event/category/update</div>
+        <div>Endpoint: delete /event/category/:id</div>
+      </code>
+
+      <h2>Contact:</h2>
+
+      <code>
+        <div>Endpoint: post /contact/create</div>
+      </code>
+
+      <h2>Subscribe:</h2>
+
+      <code>
+        <div>Endpoint: post /subscribe/create</div>
+        <div>Endpoint: post /subscribe/delete</div>
+      </code>
+    </div>
+  </body>
+</html>
